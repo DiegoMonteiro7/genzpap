@@ -18,6 +18,8 @@ app.post("/registerUser", (req, res) => {
   const { email } = req.body;
   const { password } = req.body;
 
+  console.log(nickname)
+
   let SQL  = "INSERT INTO users (Nickname, Email, Password) VALUES (?,?,?)";
 
   db.query(SQL,[nickname, email, password], (err, result) => {
