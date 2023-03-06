@@ -168,7 +168,7 @@ export function Register() {
                 />
                 {errors.confPassword && <p>{errors.confPassword.message}</p>}
                 <br />
-                <Button variant="contained" type="submit" onSubmit={handleClickButton}>
+                <Button variant="contained" type="submit" onClick={handleClickButton}>
                   Enviar
                 </Button>
               </Box>
